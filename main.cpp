@@ -63,9 +63,9 @@ int main(int argv, char **argk) {
     uint32_t B = b0;
     uint32_t C = c0;
     uint32_t D = d0;
+    uint32_t F = 0, g = 0;
 
     for (int j = 0; j < 64; j++) {
-      uint32_t F, g;
       if (0 <= j && j <= 15) {
         F = (B & C) | ((~B) & D);
         g = j;
